@@ -14,7 +14,7 @@
             max-width: 660px;
             margin: 0 auto;
             padding: 20px;
-            padding-bottom: 150px;
+            padding-bottom: 50px;
             background: linear-gradient(135deg, #FFEDE1 0%, #F9FBF2 50%, #D7F9FF 100%);
             min-height: 100vh;
         }
@@ -521,128 +521,6 @@
             cursor: default;
         }
 
-        footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(135deg, rgba(255, 237, 225, 0.95), rgba(215, 249, 255, 0.95));
-            backdrop-filter: blur(10px);
-            text-align: center;
-            padding: 8px 0;
-            font-size: 14px;
-            color: #AFCBFF;
-            border-top: 1px solid rgba(175, 203, 255, 0.3);
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        footer kbd {
-            background: linear-gradient(135deg, #AFCBFF, #0E1C36);
-            border: 1px solid #AFCBFF;
-            border-radius: 4px;
-            box-shadow: 0 2px 4px rgba(175, 203, 255, 0.2);
-            color: white;
-            display: inline-block;
-            font-size: 11px;
-            line-height: 10px;
-            padding: 4px 6px;
-            vertical-align: middle;
-            font-weight: 600;
-        }
-
-        #command-menu {
-            position: fixed;
-            top: 20%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 500px;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(15px);
-            border: 2px solid #AFCBFF;
-            border-radius: 12px;
-            box-shadow: 0 8px 32px rgba(175, 203, 255, 0.2);
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        .search-container {
-            display: flex;
-            align-items: center;
-            padding: 12px;
-            border-bottom: 1px solid rgba(175, 203, 255, 0.3);
-            background: linear-gradient(135deg, rgba(175, 203, 255, 0.1), rgba(215, 249, 255, 0.1));
-            border-radius: 10px 10px 0 0;
-        }
-
-        .search-icon {
-            color: #AFCBFF;
-            margin-right: 8px;
-        }
-
-        .search-icon iconify-icon {
-            font-size: 20px;
-            vertical-align: middle;
-        }
-
-        .search-container input {
-            flex-grow: 1;
-            border: none;
-            font-size: 16px;
-            outline: none;
-        }
-
-        .close-button {
-            background: none;
-            border: none;
-            font-size: 20px;
-            color: #8e8e8e;
-            cursor: pointer;
-            padding: 0 8px;
-        }
-
-        .menu-content {
-            max-height: 400px;
-            overflow-y: auto;
-        }
-
-        .section {
-            padding: 8px 0;
-        }
-
-        .section-title {
-            padding: 0 16px;
-            font-size: 12px;
-            color: #6a737d;
-            margin-bottom: 4px;
-        }
-
-        .menu-item {
-            display: block;
-            padding: 8px 16px;
-            text-decoration: none;
-            color: #24292e;
-            font-size: 14px;
-            border-radius: 6px;
-            margin: 0 8px;
-        }
-
-        .menu-item:hover {
-            background-color: #f6f8fa;
-            text-decoration: none;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        @media print {
-            .command-menu {
-                display: none !important;
-            }
-        }
-
         .floating-elements {
             position: fixed;
             top: 0;
@@ -722,11 +600,9 @@
             <iconify-icon icon="mdi:map-marker"></iconify-icon>
             <a href="https://www.google.com/maps/place/Central+Cambridge,+Cambridge/@52.2068414,0.1138042,15z/data=!3m1!4b1!4m6!3m5!1s0x47d870969e985087:0xcc65d602f2811d04!8m2!3d52.2053163!4d0.1217733!16s%2Fg%2F11fd67q6sd?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D">Cambridge, UK</a>
         </div>
+        <!-- 🔸 ADD YOUR LINKEDIN URL HERE 🔸 -->
         <div class="social-links">
-            <a href="#" aria-label="LinkedIn"><iconify-icon icon="mdi:linkedin"></iconify-icon></a>
-            <a href="#" aria-label="Twitter"><iconify-icon icon="mdi:twitter"></iconify-icon></a>
-            <a href="#" aria-label="GitHub"><iconify-icon icon="mdi:github"></iconify-icon></a>
-            <a href="#" aria-label="Email"><iconify-icon icon="mdi:email"></iconify-icon></a>
+            <a href="YOUR_LINKEDIN_URL_HERE" aria-label="LinkedIn"><iconify-icon icon="mdi:linkedin"></iconify-icon></a>
         </div>
     </div>
     <img src="thumbnail_IMG_0458.jpg" alt="Profile Picture" class="profile-image">
@@ -802,6 +678,7 @@
                         <p>Pricing and market entry strategy work for medium and large biotechs out of Boston, MA.</p>
                     </div>
                 </li>
+                <li class="work-item">
                     <div class="work-item-header">
                         <img src="SNY-283a0d12.png" alt="Sanofi Logo">
                         <span class="company-name">Sanofi</span>
@@ -891,41 +768,6 @@
         <div class="floating-circle"></div>
     </div>
 
-    <!-- Command Menu -->
-    <div id="command-menu" class="hidden">
-        <div class="search-container">
-            <div class="search-icon">
-                <iconify-icon icon="mdi:magnify"></iconify-icon>
-            </div>
-            <input type="text" placeholder="Search or jump to...">
-            <button class="close-button">×</button>
-        </div>
-        <div class="menu-content">
-            <div class="section">
-                <div class="section-title">Navigate</div>
-                <a href="#" class="menu-item">Work Experience</a>
-                <a href="#" class="menu-item">Projects</a>
-                <a href="#" class="menu-item">Publications</a>
-                <a href="#" class="menu-item">Writing</a>
-            </div>
-            <div class="section">
-                <div class="section-title">Actions</div>
-                <a href="#" class="menu-item" data-action="print">Print Page</a>
-                <a href="mailto:your.email@example.com" class="menu-item">Send Email</a>
-            </div>
-            <div class="section">
-                <div class="section-title">Social</div>
-                <a href="#" class="menu-item">LinkedIn Profile</a>
-                <a href="#" class="menu-item">GitHub Profile</a>
-                <a href="#" class="menu-item">Twitter Profile</a>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <p>Press <kbd>Cmd</kbd>+<kbd>J</kbd> to open command menu</p>
-    </footer>
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Work item toggle functionality
@@ -936,74 +778,6 @@
                     item.classList.toggle('active');
                 });
             });
-            
-            // Command menu functionality
-            const commandMenu = document.getElementById('command-menu');
-            const searchInput = commandMenu.querySelector('input');
-            
-            // Toggle command menu on Cmd+J or Ctrl+J
-            document.addEventListener('keydown', function(event) {
-                if (event.key === 'j' && (event.metaKey || event.ctrlKey)) {
-                    event.preventDefault();
-                    commandMenu.classList.toggle('hidden');
-                    if (!commandMenu.classList.contains('hidden')) {
-                        searchInput.focus();
-                    }
-                }
-            });
-            
-            // Close menu when clicking the close button
-            const closeButton = commandMenu.querySelector('.close-button');
-            closeButton.addEventListener('click', function() {
-                commandMenu.classList.add('hidden');
-            });
-            
-            // Close menu when clicking outside
-            document.addEventListener('click', function(event) {
-                if (!commandMenu.contains(event.target) && !commandMenu.classList.contains('hidden')) {
-                    commandMenu.classList.add('hidden');
-                }
-            });
-            
-            // Handle menu item clicks
-            const menuItems = commandMenu.querySelectorAll('.menu-item');
-            menuItems.forEach(item => {
-                item.addEventListener('click', function(e) {
-                    if (this.dataset.action === 'print') {
-                        e.preventDefault();
-                        window.print();
-                    }
-                    commandMenu.classList.add('hidden');
-                });
-            });
-            
-            // Search functionality
-            searchInput.addEventListener('input', function() {
-                const filter = this.value.toLowerCase();
-                menuItems.forEach(item => {
-                    const text = item.textContent.toLowerCase();
-                    const section = item.closest('.section');
-                    if (text.includes(filter)) {
-                        item.style.display = '';
-                        section.style.display = '';
-                    } else {
-                        item.style.display = 'none';
-                        if ([...section.querySelectorAll('.menu-item')].every(i => i.style.display === 'none')) {
-                            section.style.display = 'none';
-                        }
-                    }
-                });
-            });
-            
-            // Email functionality
-            const emailLink = document.querySelector('a[aria-label="Email"]');
-            if (emailLink) {
-                emailLink.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const email = 'your.email' + '@' + 'example.com'; // Replace with your actual email
-                    window.location.href = 'mailto:' + email;
-                });
-            }
         });
     </script>
 </body>
